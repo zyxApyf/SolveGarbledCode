@@ -34,8 +34,8 @@ public class Main {
 	private static ThostFtdcUserApiStruct thostFtdcUserApiStruct = null;
 	
 	public static void main(String[] args) {
-		String filePath = "F:\\文件内容替换工具\\ctp_wrap.cxx";
-		//String filePath = System.getProperty("user.dir") + "\\ctp_wrap.cxx";
+		//String filePath = "F:\\文件内容替换工具\\ctp_wrap.cxx";
+		String filePath = System.getProperty("user.dir") + "\\ctp_wrap.cxx";
 		thostFtdcUserApiStruct = new ThostFtdcUserApiStruct();
 		replaceFileContext(filePath);
 	}
@@ -235,8 +235,8 @@ public class Main {
                 //行与行之间的分割
                 stringBuffer.append(System.getProperty("line.separator"));
 			}
-			String newFilePath = "F:\\文件内容替换工具\\new_ctp_wrap.cxx";
-			//String newFilePath = System.getProperty("user.dir") + "\\new_ctp_wrap.cxx";
+			//String newFilePath = "F:\\文件内容替换工具\\new_ctp_wrap.cxx";
+			String newFilePath = System.getProperty("user.dir") + "\\new_ctp_wrap.cxx";
 			File newFile = new File(newFilePath);
 			if(!newFile.exists()) {
 				newFile.createNewFile();
