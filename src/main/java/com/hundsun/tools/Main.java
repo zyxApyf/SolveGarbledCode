@@ -77,8 +77,8 @@ public class Main {
             
 			String line = null;
 			while((line = bufferedReader.readLine()) != null) {
-				String getterSign = "SWIGEXPORT jstring JNICALL Java_com_ctp_ctpJNI_";
-				String setterSign = "SWIGEXPORT void JNICALL Java_com_ctp_ctpJNI_";
+				String getterSign = "SWIGEXPORT jstring JNICALL Java_com_ustp_ctpJNI_";
+				String setterSign = "SWIGEXPORT void JNICALL Java_com_ustp_ctpJNI_";
 				//通过 SWIGEXPORT jstring JNICALL Java_com_ctp_ctpJNI_ 关键点匹配get方法中需要替换的行的所需关键字
 				Pattern getKeyWordPattern = Pattern.compile("^" + getterSign + ".*");
 				String getKeyWordString = "";
