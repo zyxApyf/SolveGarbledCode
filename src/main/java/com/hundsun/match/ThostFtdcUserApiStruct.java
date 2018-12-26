@@ -70,7 +70,7 @@ public class ThostFtdcUserApiStruct {
 					Map<String, String> structMember = new HashMap<>();
 					Label:while((subLine = bufferedReader.readLine()) != null) {
 						//匹配结构体内容
-						Pattern fPattern = Pattern.compile(".*TThost.*");
+						Pattern fPattern = Pattern.compile(".*TUstp.*");
 						String fString = "";
 						Matcher fMatcher = fPattern.matcher(subLine);
 						//匹配结构体内容结束标志
